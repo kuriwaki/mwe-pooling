@@ -105,4 +105,4 @@ ests |>
   theme_classic() +
   coord_equal() +
   labs(x = "Direct estimate", y = "Modeled Estimate") +
-  labs(caption = glue::glue("RE models are {as.character(grp_ff)}. FE models are y ~ state. n = {nrow(samp_dat)}"))
+  labs(caption = glue::glue("RE models are {Reduce(paste, deparse(grp_ff))}. FE models are y ~ state. n = {nrow(samp_dat)}"))
